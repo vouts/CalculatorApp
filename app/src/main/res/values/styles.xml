@@ -22,6 +22,8 @@
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_weight">1</item>
         <item name="android:orientation">vertical</item>
+        <item name="android:layout_marginLeft">@dimen/columnMarginLeft</item>
+        <item name="android:layout_marginRight">@dimen/columnMarginRight</item>
     </style>
 
     <style name="buttonStyle">
@@ -31,7 +33,6 @@
         <item name="android:textColor">@color/textColor</item>
         <item name="android:background">@color/colorPrimary</item>
         <item name="android:layout_marginBottom">@dimen/buttonMarginBottom</item>
-        <item name="android:layout_marginRight">@dimen/buttonMarginLeft</item>
 
     </style>
 
@@ -41,8 +42,6 @@
         <item name="android:layout_height">wrap_content</item>
         <item name="android:textColor">@color/textColor</item>
         <item name="android:background">@color/colorPrimaryDark</item>
-        <item name="android:layout_marginBottom">@dimen/buttonMarginBottom</item>
-        <item name="android:layout_marginRight">@dimen/buttonMarginLeft</item>
         <item name="android:minHeight">98dp</item>
 
     </style>

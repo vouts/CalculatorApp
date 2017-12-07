@@ -2,6 +2,7 @@
 <resources>
     <dimen name="resultSize">56sp</dimen>
     <dimen name="buttonMarginBottom">2dp</dimen>
-    <dimen name="buttonMarginLeft">2dp</dimen>
+    <dimen name="columnMarginLeft">1dp</dimen>
+    <dimen name="columnMarginRight">1dp</dimen>
     <dimen name="helperSize">14sp</dimen>
 </resources>
