@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <dimen name="resultSize">56sp</dimen>
+    <dimen name="buttonMarginBottom">2dp</dimen>
+    <dimen name="buttonMarginLeft">2dp</dimen>
+    <dimen name="helperSize">14sp</dimen>
 </resources>

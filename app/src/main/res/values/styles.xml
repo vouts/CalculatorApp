@@ -8,4 +8,65 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="buttonBow">
+
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="buttonColumn">
+
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="buttonStyle">
+
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/textColor</item>
+        <item name="android:background">@color/colorPrimary</item>
+        <item name="android:layout_marginBottom">@dimen/buttonMarginBottom</item>
+        <item name="android:layout_marginRight">@dimen/buttonMarginLeft</item>
+
+    </style>
+
+    <style name="equalStyle">
+
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/textColor</item>
+        <item name="android:background">@color/colorPrimaryDark</item>
+        <item name="android:layout_marginBottom">@dimen/buttonMarginBottom</item>
+        <item name="android:layout_marginRight">@dimen/buttonMarginLeft</item>
+        <item name="android:minHeight">98dp</item>
+
+    </style>
+
+    <style name="resultStyle">
+
+
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/resultColor</item>
+        <item name="android:textSize">@dimen/resultSize</item>
+        <item name="android:layout_alignParentRight">true</item>
+
+    </style>
+
+    <style name="helperStyle">
+
+
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/resultColor</item>
+        <item name="android:textSize">@dimen/helperSize</item>
+        <item name="android:layout_alignParentRight">true</item>
+
+    </style>
+
 </resources>

@@ -8,214 +8,145 @@
 
     <TextView
         android:id="@+id/helperText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentRight="true"
-        android:text=" "
-        android:textSize="14sp" />
+        style="@style/helperStyle"
+        android:text="" />
 
 
     <TextView
         android:id="@+id/resultArea"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentRight="true"
+        style="@style/resultStyle"
         android:layout_below="@id/helperText"
-        android:text="Hello World!"
-        android:textColor="@color/resultColor"
-        android:textSize="@dimen/resultSize" />
+        android:text="" />
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:orientation="horizontal">
+    <LinearLayout style="@style/buttonBow">
 
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:orientation="vertical">
+        <LinearLayout style="@style/buttonColumn">
 
             <Button
                 android:id="@+id/clearBtn"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                style="@style/buttonStyle"
                 android:onClick="reset"
-                android:text="C"
-                android:textColor="@color/textColor" />
+                android:text="@string/reset" />
 
             <Button
                 android:id="@+id/sevenBtn"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                style="@style/buttonStyle"
                 android:onClick="getNumberFromText"
-                android:text="7"
-                android:textColor="@color/textColor" />
+                android:text="@string/seven" />
 
             <Button
                 android:id="@+id/fourBtn"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                style="@style/buttonStyle"
                 android:onClick="getNumberFromText"
-                android:text="4"
-                android:textColor="@color/textColor" />
+                android:text="@string/four" />
 
             <Button
                 android:id="@+id/oneBtn"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                style="@style/buttonStyle"
                 android:onClick="getNumberFromText"
-                android:text="@string/one"
-                android:textColor="@color/textColor" />
+                android:text="@string/one" />
 
             <Button
                 android:id="@+id/percentageBtn"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                style="@style/buttonStyle"
                 android:onClick="percentage"
-                android:text="%"
-                android:textColor="@color/textColor" />
+                android:text="@string/percentage" />
 
         </LinearLayout>
 
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:orientation="vertical">
+        <LinearLayout style="@style/buttonColumn">
 
             <Button
                 android:id="@+id/deleteBtn"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                style="@style/buttonStyle"
                 android:onClick="erase"
-                android:text="&#x2190;"
-                android:textColor="@color/textColor" />
+                android:text="@string/back" />
 
             <Button
                 android:id="@+id/eightBtn"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                style="@style/buttonStyle"
                 android:onClick="getNumberFromText"
-                android:text="8"
-                android:textColor="@color/textColor" />
+                android:text="@string/eight" />
 
             <Button
                 android:id="@+id/fiveBtn"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                style="@style/buttonStyle"
                 android:onClick="getNumberFromText"
-                android:text="5"
-                android:textColor="@color/textColor" />
+                android:text="@string/five" />
 
             <Button
                 android:id="@+id/twoBtn"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                style="@style/buttonStyle"
                 android:onClick="getNumberFromText"
-                android:text="2"
-                android:textColor="@color/textColor" />
+                android:text="@string/two" />
 
             <Button
                 android:id="@+id/zeroBtn"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                style="@style/buttonStyle"
                 android:onClick="getNumberFromText"
-                android:text="0"
-                android:textColor="@color/textColor" />
+                android:text="@string/zero" />
 
         </LinearLayout>
 
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:orientation="vertical">
+        <LinearLayout style="@style/buttonColumn">
 
             <Button
                 android:id="@+id/divideBtn"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                style="@style/buttonStyle"
                 android:onClick="operationSelect"
-                android:text="/"
-                android:textColor="@color/textColor" />
+                android:text="@string/devide" />
 
             <Button
                 android:id="@+id/nineBtn"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                style="@style/buttonStyle"
                 android:onClick="getNumberFromText"
-                android:text="9"
-                android:textColor="@color/textColor" />
+                android:text="@string/nine" />
 
             <Button
                 android:id="@+id/sixBtn"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                style="@style/buttonStyle"
                 android:onClick="getNumberFromText"
-                android:text="6"
-                android:textColor="@color/textColor" />
+                android:text="@string/six" />
 
             <Button
                 android:id="@+id/threeBtn"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                style="@style/buttonStyle"
                 android:onClick="getNumberFromText"
-                android:text="3"
-                android:textColor="@color/textColor" />
+                android:text="@string/three" />
 
             <Button
                 android:id="@+id/dotBtn"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                style="@style/buttonStyle"
                 android:onClick="decimalClicked"
-                android:text="."
-                android:textColor="@color/textColor" />
+                android:text="@string/dot" />
 
         </LinearLayout>
 
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:orientation="vertical">
+        <LinearLayout style="@style/buttonColumn">
 
             <Button
                 android:id="@+id/multiBtn"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                style="@style/buttonStyle"
                 android:onClick="operationSelect"
-                android:text="X"
-                android:textColor="@color/textColor" />
+                android:text="@string/multiply" />
 
             <Button
                 android:id="@+id/minusBtn"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                style="@style/buttonStyle"
                 android:onClick="operationSelect"
-                android:text="-"
-                android:textColor="@color/textColor" />
+                android:text="@string/minus" />
 
             <Button
                 android:id="@+id/plusBtn"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                style="@style/buttonStyle"
                 android:onClick="operationSelect"
-                android:text="+"
-                android:textColor="@color/textColor" />
+                android:text="@string/plus" />
 
             <Button
                 android:id="@+id/equalBtn"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginRight="4dp"
-                android:layout_marginTop="5dp"
-                android:background="#005662"
-                android:minHeight="85dp"
+                style="@style/equalStyle"
                 android:onClick="equal"
-                android:text="="
-                android:textColor="@color/textColor" />
+                android:text="@string/equal" />
 
 
         </LinearLayout>
