@@ -125,6 +125,7 @@ public class MainActivity extends AppCompatActivity {
 
             }
             equalSelected = true;
+            secondNumberSet = false;
         }
 
     }
@@ -238,7 +239,7 @@ public class MainActivity extends AppCompatActivity {
      * Erase the last digit
      */
     public void erase(View view) {
-        if (!decimalSelected) {
+        if ((!decimalSelected || !equalSelected) && ((!firstNumberSet && !operationSet) || (operationSet && secondNumberSet))) {
             if (secondNumberString != null) {
                 secondNumberString = secondNumberString.substring(0, secondNumberString.length() - 1);
                 secondNumber = Double.parseDouble(secondNumberString);
@@ -373,6 +374,7 @@ public class MainActivity extends AppCompatActivity {
 
 
     }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
