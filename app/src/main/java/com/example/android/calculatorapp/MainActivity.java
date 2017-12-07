@@ -241,15 +241,25 @@ public class MainActivity extends AppCompatActivity {
     public void erase(View view) {
         if ((!decimalSelected || !equalSelected) && ((!firstNumberSet && !operationSet) || (operationSet && secondNumberSet))) {
             if (secondNumberString != null) {
-                secondNumberString = secondNumberString.substring(0, secondNumberString.length() - 1);
-                secondNumber = Double.parseDouble(secondNumberString);
-                secondNumberSet = true;
-                printResult(secondNumberString);
+                if (secondNumberString.length() > 1) {
+                    secondNumberString = secondNumberString.substring(0, secondNumberString.length() - 1);
+                    secondNumber = Double.parseDouble(secondNumberString);
+                    secondNumberSet = true;
+                    printResult(secondNumberString);
+                } else {
+                    secondNumber = 0;
+                    printResult(secondNumberString);
+                }
 
             } else if (firstNumberString != null) {
-                firstNumberString = firstNumberString.substring(0, firstNumberString.length() - 1);
-                firstNumber = Double.parseDouble(firstNumberString);
-                printResult(firstNumberString);
+                if (firstNumberString.length() > 1) {
+                    firstNumberString = firstNumberString.substring(0, firstNumberString.length() - 1);
+                    firstNumber = Double.parseDouble(firstNumberString);
+                    printResult(firstNumberString);
+                } else {
+                    firstNumber = 0;
+                    printResult(firstNumberString);
+                }
 
             } else {
                 String finalResultString = Double.toString(finalResult);
