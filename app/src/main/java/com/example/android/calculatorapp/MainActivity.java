@@ -239,26 +239,29 @@ public class MainActivity extends AppCompatActivity {
      * Erase the last digit
      */
     public void erase(View view) {
+        int stringLength;
         if ((!decimalSelected || !equalSelected) && ((!firstNumberSet && !operationSet) || (operationSet && secondNumberSet))) {
             if (secondNumberString != null) {
-                if (secondNumberString.length() > 1) {
+                if ( secondNumberString.length() > 1) {
                     secondNumberString = secondNumberString.substring(0, secondNumberString.length() - 1);
                     secondNumber = Double.parseDouble(secondNumberString);
                     secondNumberSet = true;
                     printResult(secondNumberString);
                 } else {
                     secondNumber = 0;
-                    printResult(secondNumberString);
+                    secondNumberString = null;
+                    printResult(Double.toString(secondNumber));
                 }
 
             } else if (firstNumberString != null) {
-                if (firstNumberString.length() > 1) {
+                if ( firstNumberString.length() > 1) {
                     firstNumberString = firstNumberString.substring(0, firstNumberString.length() - 1);
                     firstNumber = Double.parseDouble(firstNumberString);
                     printResult(firstNumberString);
                 } else {
                     firstNumber = 0;
-                    printResult(firstNumberString);
+                    firstNumberString = null;
+                    printResult(Double.toString(firstNumber));
                 }
 
             } else {
